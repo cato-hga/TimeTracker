@@ -1,28 +1,18 @@
-== README
+# TimeTracker Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirement: Building an application that tracks employees time for each week.
 
-Things you may want to cover:
+## Models
+Post - date:date rationale:text
+User - Devise
+AdminUser -> STI
 
-* Ruby version
+## Features:
+- Approval Workflow
+SMS Sending -> link to approval or overtime input
+Admin dashboard
+Email summary to managers for approval
+Needs to be documented if employee did not log overtime
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## UI:
+Bootstrap -> formatting
