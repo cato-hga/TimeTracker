@@ -3,7 +3,7 @@
 Requirement: Building an application that tracks employees time for each week.
 
 ## Models
-- Post - date:date rationale:text
+x Post - date:date rationale:text
 x User - Devise
 x AdminUser -> STI
 
