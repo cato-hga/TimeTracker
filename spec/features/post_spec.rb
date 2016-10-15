@@ -27,7 +27,17 @@ describe 'navigate' do
     it 'has a link from homepage to new post page' do
       visit root_path
 
-      click_link('Add New Entry')
+      click_link("new_post_from_nav")
+      expect(page.status_code).to eq(200)
+    end
+  end
+
+  describe 'delete' do
+    it 'can be deleted' do
+      @post = FactoryGirl.create(:post)
+      visit posts_path
+
+      click_link("delete_post_#{@post.id}from_index")
       expect(page.status_code).to eq(200)
     end
   end
