@@ -23,6 +23,14 @@ describe 'navigate' do
   	  expect(page).to have_content(/Rationale|content/)
   	end
   end
+  describe 'new' do
+    it 'has a link from homepage to new post page' do
+      visit root_path
+
+      click_link('Add New Entry')
+      expect(page.status_code).to eq(200)
+    end
+  end
   describe 'creation' do
   	before do
   		visit new_post_path
