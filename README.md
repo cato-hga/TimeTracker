@@ -11,6 +11,7 @@ Requirement: Building an application that tracks employees time for each week.
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
 - Admin dashboard
+- Block non admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
