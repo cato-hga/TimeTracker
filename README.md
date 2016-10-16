@@ -3,9 +3,9 @@
 Requirement: Building an application that tracks employees time for each week.
 
 ## Models
-x Post - date:date rationale:text
-x User - Devise
-x AdminUser -> STI
+- Post - date:date rationale:text XXX
+- User - Devise XXX
+- AdminUser -> STI XXX
 
 ## Features:
 - Approval Workflow
@@ -15,9 +15,9 @@ x AdminUser -> STI
 - Needs to be documented if employee did not log overtime
 
 ## UI:
-X Bootstrap -> formatting
+- Bootstrap -> formatting XXX
 - Icons from Font Awesome
-X Update the styles for form
+- Update the styles for form XXX
 
 ## Refactor TODOS:
 - Refactor user association integration test in post_spec
