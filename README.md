@@ -24,4 +24,6 @@ Requirement: Building an application that tracks employees time for each week.
 - Refactor user association integration test in post_spec
 - Refactor posts/_form for admin user with status
 - Fix post_spec.rb:82 to use factories
+- Fix post_spec.rb:52 to have correct user reference and have right id.
+
 

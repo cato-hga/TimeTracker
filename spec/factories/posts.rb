@@ -22,6 +22,7 @@ FactoryGirl.define do
     rationale "Some more content"
     user
   end	
+  
 end
 
   
