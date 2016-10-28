@@ -9,9 +9,9 @@ module PostsHelper
 		case status
 		when 'submitted'
 			content_tag(:span, status.titleize, class: "label label-primary")	
-		when 'submitted'
+		when 'approved'
 			content_tag(:span, status.titleize, class: "label label-success")	
-		when 'submitted'
+		when 'rejected'
 			content_tag(:span, status.titleize, class: "label label-danger")	
 		end
 	end
