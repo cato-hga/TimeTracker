@@ -21,10 +21,6 @@ Requirement: Building an application that tracks employees time for each week.
 - X Icons from glyphicons
 - X Update the styles for form 
 
-## Refactor TODOS:
-- Integrate validation for phone attr in User:
-# No spaces or dashes
-# All characters have to be a number
-# Exactly 10 characters
+##  TODOS:
 
 
