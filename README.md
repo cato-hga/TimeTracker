@@ -22,9 +22,9 @@ Requirement: Building an application that tracks employees time for each week.
 - X Update the styles for form 
 
 ## Refactor TODOS:
-- X Refactor user association integration test in post_spec
-- X Refactor posts/_form for admin user with status
-- X Fix post_spec.rb:82 to use factories
-- X Fix post_spec.rb:52 to have correct user reference and have right id.
+- Integrate validation for phone attr in User:
+# No spaces or dashes
+# All characters have to be a number
+# Exactly 10 characters
 
 
