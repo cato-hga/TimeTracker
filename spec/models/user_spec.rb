@@ -18,6 +18,7 @@
 #  type                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  phone                  :string
 #
 
 require 'rails_helper'
@@ -31,9 +32,18 @@ RSpec.describe User, type: :model do
 	  expect(@user).to be_valid
 	end
 
-	it "cannot be created without first_name, last_name" do
+	it "cannot be created without first_name" do
 	  @user.first_name = nil
+	  expect(@user).to_not be_valid
+	end
+
+	it "cannot be created without last_name" do
 	  @user.last_name = nil
+	  expect(@user).to_not be_valid
+	end
+
+	it "cannot be created without phone" do
+	  @user.phone = nil
 	  expect(@user).to_not be_valid
 	end
   end

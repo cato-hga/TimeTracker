@@ -18,6 +18,7 @@
 #  type                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  phone                  :string
 #
 
 FactoryGirl.define do
@@ -31,6 +32,7 @@ FactoryGirl.define do
     email {generate :email }
     password "asdfasdf"
     password_confirmation "asdfasdf"
+    phone "9347219977"
   end
 
   factory :admin_user, class: "AdminUser" do
@@ -39,6 +41,7 @@ FactoryGirl.define do
     email {generate :email }
     password "asdfasdf"
     password_confirmation "asdfasdf"
+    phone "9347219977"
   end
 
   factory :non_authorized_user, class: "User" do
@@ -47,6 +50,7 @@ FactoryGirl.define do
     email {generate :email }
     password "asdfasdf"
     password_confirmation "asdfasdf"
+    phone "9347219977"
   end 	
 end
 

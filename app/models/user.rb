@@ -18,6 +18,7 @@
 #  type                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  phone                  :string
 #
 
 class User < ActiveRecord::Base
@@ -26,7 +27,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  validates_presence_of :first_name, :last_name
+  validates_presence_of :first_name, :last_name, :phone
 
   def full_name
     last_name.upcase + ", " + first_name.upcase
