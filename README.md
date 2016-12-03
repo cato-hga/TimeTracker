@@ -10,7 +10,7 @@ Requirement: Building an application that tracks employees time for each week.
 
 ## Features:
 - Approval Workflow
-- SMS Sending -> link to approval or overtime input
+- SMS Sending -> link to approval or overtime input - integrate with Heroku scheduler.
 - X Administrate Admin dashboard
 - X Block non admin and guest users
 - Email summary to managers for approval
