@@ -2,13 +2,12 @@ namespace :notification do
   desc "Send SMS notifcation to employees asking them to log if they had overtime or not."
   task sms: :environment do # To create a schedule with Heroku run this command in terminal: heroku addons:create scheduler:standard
     if Time.now.sunday?
-      # 1. Schedule Sunday at 5pm
-      # 2. Iterate over all employees
-      # 3. Skip AdminUsers
+      employees = Employee.all
       # 4. Send a message that has instructions and a link to logtime
-      # User.all.each do |user|
-
-      # end
+      notification_message = "Please log into the overtime management dashboard to request overtime or confirm your hours for last week: https:///time-tracker813.herokuapp.com"
+      employees.each do |employee|
+        SmsTool.send_sms(number: employee.phone, message: notification_message)
+      end
       # number: "813-213-4454"
       # number: "8132134454"
       # No spaces or dashes
